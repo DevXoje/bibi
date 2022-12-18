@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\{BooksController, PicturesController, PostsController, AuthController};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name("home");
+Route::get("contact", function () {
+    return view('contact');
+})->name("contact");
+Route::get("about", function () {
+    return view('about');
+})->name("about");
+
+Route::resources([
+    'posts' => PostsController::class,
+    'books' => BooksController::class,
+    'pictures' => PicturesController::class
+]);
+
+Route::get("login", [AuthController::class, "loginForm"]);
+
