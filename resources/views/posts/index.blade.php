@@ -7,12 +7,13 @@
         <div class="gallery">
             @foreach ($posts as $post)
                 <article class="gallery__item">
-                    <a href="{{route("posts.show",$post)}}">{{--<a href="/posts/{{ $post->id }}">--}}
-                        {{--<figure>
-                            <img src="{{ Vite::asset('resources/images/welcome.webp') }}" alt="algo">
-                        </figure>--}}
-                        <img src="https://via.placeholder.com/150" alt="algo">
-                        <h2>{{ $post["title"]}}</h2>
+                    {{--<a href="">--}}
+                    <a href="{{route("posts.show",$post)}}">
+                        <figure>
+                            <img src="{{ Vite::asset($post->image) }}" alt="algo">
+                        </figure>
+                        {{--<img src="https://via.placeholder.com/150" alt="algo">
+                       --}} <h2>{{ $post["title"]}}</h2>
                         <p>{{ Str::limit($post["content"])}}</p>
                     </a>
                 </article>

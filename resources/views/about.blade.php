@@ -4,8 +4,8 @@
 @section('content')
     <h1>Sobre mi</h1>
     <div>
-        <figure>
-            <img src="{{ Vite::asset('resources/images/bibi.webp') }}" alt="algo">
+        <figure class="wrapper">
+            <img class="image--cover" src="{{ Vite::asset('resources/images/bibi.webp') }}" alt="algo">
         </figure>
         <div>
             <p>Hola soy Bianca M, el alma de Perla Da Lúa y creadora de Mantura Manos Natura.</p>
@@ -14,7 +14,7 @@
                 fantasías, investigadora de los saberes ancestrales y peregrina de la senda espiritual femenina.</p>
             <p>Camino proyectando y materializando obras artísticas llenas de simbolismo que exploran el reino
                 metafísico y la esencia de la Madre Tierra con un misticismo fantástico.</p>
-            <figure>
+            <figure class="image__draw jumbotron">
                 <img src="{{ Vite::asset('resources/images/Dibujos/dibujo_bibi.jpeg') }}" alt="algo">
             </figure>
             <p>Nací en un hogar biracial , cosa que me ha enriquecido bellamente, y crecí en la provincia de Alicante.

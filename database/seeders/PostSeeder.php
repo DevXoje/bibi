@@ -11,6 +11,7 @@ class PostSeeder extends Seeder
     public function run()
     {
         $post1 = new Post([
+            "image" => "resources/images/Articulos/conectarse_a_la_vida.webp",
             "title" => "1º Comprendernos como un todo",
             "slug" => Str::slug("1º Comprendernos como un todo"),
             "content" => "La palabra Holística viene del término Holismo y esta a su vez de holos, término griego que significa  “todo” o “entero”.
@@ -24,6 +25,8 @@ La visión holística se basa en tener un equilibrio de todas las áreas de nues
 Así pues, percibiendo la vida desde una mente más abierta y despejada de negatividad, teniendo una alimentación saludable, abrazándonos en cada movimiento, descansando y fluyendo con nuestros propios ritmos naturales, podremos obtener un equilibrio y vivir una vida plena y en armonía."
         ]);
         $post2 = new Post([
+            "image" => "resources/images/Articulos/conectarse_a_la_vida.webp",
+
             "title" => "2º Comprendernos como un todo",
             "slug" => Str::slug("2º Comprendernos como un todo"),
 
@@ -50,6 +53,8 @@ Todas estas disciplinas se emplean para ayudar en los problemas físicos, mental
 La clave sería vivir una vida equilibrada y armónica en la cual la enfermedad sea una circunstancia excepcional y el estado natural sea la salud. En definitiva podremos lograrlo tomando conciencia y haciéndonos cargo de nuestra propia Salud, trabajando cada día para conocernos y sentirnos cada vez mejor con nosotr@s mism@s en todos los aspectos de nuestra vida."
         ]);
         $post3 = new Post([
+            "image" => "resources/images/Articulos/conectarse_a_la_vida.webp",
+
             "title" => "3º Primeros pasos para una salud holística",
             "slug" => Str::slug("3º Primeros pasos para una salud holística"),
 
@@ -64,6 +69,8 @@ La visión holística se basa en tener un equilibrio de todas las áreas de nues
 Así pues, percibiendo la vida desde una mente más abierta y despejada de negatividad, teniendo una alimentación saludable, abrazándonos en cada movimiento, descansando y fluyendo con nuestros propios ritmos naturales, podremos obtener un equilibrio y vivir una vida plena y en armonía."
         ]);
         $post4 = new Post([
+            "image"=>"resources/images/Articulos/conectarse_a_la_vida.webp",
+
             "title" => "Ser arte",
             "slug" => Str::slug("Ser arte"),
 

@@ -3,10 +3,11 @@
 
 @section('content')
     @isset($post)
-        {{--<figure>
-            <img src="{{ Vite::asset('resources/images/welcome.webp') }}" alt="algo">
-        </figure>--}}
-        <img src="https://via.placeholder.com/150" alt="algo">
+        <figure>
+            <img src="{{ Vite::asset($post->image) }}" alt="algo">
+        </figure>
+
+        {{--<img src="https://via.placeholder.com/150" alt="algo">--}}
         <h1>Details for the post {{ $post->id }}</h1>
         <h2>{{ $post["title"]}}</h2>
         <p>{{ $post["content"]}}</p>

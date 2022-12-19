@@ -13,7 +13,7 @@ return new class extends Migration {
             //$table->string('subtitle', 60);
             $table->text('content');
             $table->string("slug");
-            //$table->text('image');
+            $table->text('image');
 
             $table->timestamps();
         });
