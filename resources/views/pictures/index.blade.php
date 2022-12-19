@@ -4,12 +4,19 @@
 @section('content')
     <h1>Pictures</h1>
     @if (isset($pictures))
-        @foreach ($pictures as $picture)
-            <hr>
-            <h2>{{$picture["title"]}}</h2>
-            <hr>
-            <img src="{{$picture["path"]}}" alt="algo">
-        @endforeach
+        <div class="gallery_pictures">
+            @foreach ($pictures as $picture)
+                <figure class="jumbotron">
+                    <hr>
+                    <figcaption>
+                        <h2>{{$picture["title"]}}</h2>
+                    </figcaption>
+                    <hr>
+                    <img src="{{Vite::asset($picture["path"])}}" alt="algo">
+
+                </figure>
+            @endforeach
+        </div>
     @else
         <p>
             No Hay book disponibles

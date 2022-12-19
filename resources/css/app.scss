@@ -1,0 +1,133 @@
+/*Common*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*Shared*/
+.navbar_nav {
+    display: flex;
+}
+
+.nav_link {
+    color: #4F4F4F;
+}
+
+.nav_link.active {
+    background-color: #c3957b;
+}
+
+.nav_link:hover {
+    background-color: #c3957b;
+}
+
+.jumbotron {
+    img {
+        width: 740px;
+        aspect-ratio: auto 740 / 830;
+    }
+
+    @media screen and (max-width: 1304px) {
+        img {
+            height: auto;
+            max-width: 90vw;
+            max-height: 1000%;
+        }
+    }
+}
+
+/*Home*/
+.welcome {
+    img {
+        min-height: 270px;
+        max-height: 684px;
+        width: 100%;
+    }
+}
+
+.return_to_you {
+    img {
+        width: 825px;
+        aspect-ratio: auto 825 / 583;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+/*Blog*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & .gallery__item {
+        flex-basis: 100%;
+        margin-bottom: 1.5em;
+        @media only screen and (min-width: 600px) {
+            flex-basis: calc(33.333% - 16px);
+        }
+        @media only screen and (min-width: 782px) {
+            flex-basis: calc((100% / 3) - 16px);
+        }
+    }
+
+
+}
+
+/*Books*/
+.book {
+    border: 1px solid rosybrown;
+
+    &__title, &__subtitle {
+        margin-bottom: 1em;
+        line-height: 1.8;
+
+    }
+
+    &__title {
+        color: rebeccapurple;
+    }
+
+    &__subtitle {
+        color: blue;
+
+    }
+
+    &__content {
+
+
+    }
+}
+
+/*Picture*/
+.gallery_pictures {
+    figure {
+
+        img {
+        }
+    }
+}
+
+/*About me*/
+/*.wrapper {
+  padding: 100px;
+}
+
+.image--cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  object-fit: cover;
+  object-position: center right;
+}*/

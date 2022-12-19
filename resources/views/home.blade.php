@@ -2,8 +2,8 @@
 @section('title', 'Home')
 
 @section('content')
-    <figure>
-        <img src="{{asset('/img/welcome.webp')}}" width="200px">
+    <figure class="welcome">
+        <img src="{{ Vite::asset('resources/images/bienvenida.webp') }}" alt="algo">
         {{--Seria mejor que fuese texto--}}
     </figure>
     <p>Este es un espacio íntimo y personal que he creado para ti, un lugar donde podrás relajarte y redescubrir tus
@@ -11,8 +11,8 @@
     <p>Mi propuesta de trabajo se basa en facilitarte información y pequeñas herramientas artísticas de exploración y
         transformación, con las que despertar tu creatividad, poder armonizarte y reconectar de manera apasionada con tu
         esencia y naturaleza creadora.</p>
-    <figure>
-        <img src="{{asset('/img/return_to_you.webp')}}" width="200px">
+    <figure class="return_to_you">
+        <img src="{{ Vite::asset('resources/images/de_vuelta_a_ti.webp') }}" alt="algo">
     </figure>
     <p>Así pues te presento <strong>DE VUELTA A TI</strong> un proyecto artístico por el cual pretendo tratar temas de
         arte, naturaleza y salud holística.</p>

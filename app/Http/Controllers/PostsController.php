@@ -88,12 +88,12 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Post $post)
     {
-        if (!is_numeric($id)) {
+        /*if (!is_numeric($id)) {
             return "The id must be numeric";
         }
-        $post = Post::findOrFail($id);
+        $post = Post::findOrFail($id);*/
         /* $user= User::findOrFail(auth()->user()->id); */
 
         return view('posts.show', compact("post"));

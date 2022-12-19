@@ -36,4 +36,17 @@ class BooksController extends Controller
     public function destroy(Book $book)
     {
     }
+
+    public function download(Book $book)
+    {
+        //PDF file is stored under project/public/download/info.pdf
+        $file = public_path() . "/pdf/Mandalas2.pdf";
+
+        $headers = array(
+            'Content-Type: application/pdf',
+        );
+
+        //return response()->file($file, $headers);
+        return response()->download($file, headers:$headers);
+    }
 }

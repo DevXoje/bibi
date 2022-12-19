@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Post;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
 
 class PostSeeder extends Seeder
 {
@@ -11,6 +12,7 @@ class PostSeeder extends Seeder
     {
         $post1 = new Post([
             "title" => "1º Comprendernos como un todo",
+            "slug" => Str::slug("1º Comprendernos como un todo"),
             "content" => "La palabra Holística viene del término Holismo y esta a su vez de holos, término griego que significa  “todo” o “entero”.
 
 El holismo es “una posición metodológica y de pensamiento que plantea el abordaje de los sistemas sociales, físicos, biológicos, mentales, y espirituales”, resaltando la importancia del Todo, es decir, desde una perspectiva completa. Así pues una visión holística en términos generales, es aquella que contemple la totalidad del sistema que compone al ser humano, lo que se puede interpretar como contemplar un mundo donde todo esta interconectado.
@@ -23,6 +25,8 @@ Así pues, percibiendo la vida desde una mente más abierta y despejada de negat
         ]);
         $post2 = new Post([
             "title" => "2º Comprendernos como un todo",
+            "slug" => Str::slug("2º Comprendernos como un todo"),
+
             "content" => "Estar sano es tener un equilibrio apropiado entre lo orgánico lo mental y lo espiritual. En el momento que alguno de estos puntos falla deja de haber una armonía entre las funciones de cuerpo, mente y espíritu que definimos como salud holística. Todo esto quiere decir que, el progreso material es muy importante pero también debemos mantener un equilibrio con nuestra paz mental para poder alcanzar una calma y madurez en cada situación que nos presenta la vida.  Por tanto la Salud Holística se refiere a la salud en todos los ámbitos.
 
 Cómo podemos contemplar nuestra salud de manera holística ? Para alcanzar una salud radiante, es decir sentirse plenx, debemos tener en cuenta que es necesario tener unos hábitos buenos, saludables y en armonía con la naturaleza.
@@ -47,6 +51,8 @@ La clave sería vivir una vida equilibrada y armónica en la cual la enfermedad 
         ]);
         $post3 = new Post([
             "title" => "3º Primeros pasos para una salud holística",
+            "slug" => Str::slug("3º Primeros pasos para una salud holística"),
+
             "content" => "La palabra Holística viene del término Holismo y esta a su vez de holos, término griego que significa  “todo” o “entero”.
 
 El holismo es “una posición metodológica y de pensamiento que plantea el abordaje de los sistemas sociales, físicos, biológicos, mentales, y espirituales”, resaltando la importancia del Todo, es decir, desde una perspectiva completa. Así pues una visión holística en términos generales, es aquella que contemple la totalidad del sistema que compone al ser humano, lo que se puede interpretar como contemplar un mundo donde todo esta interconectado.
@@ -59,6 +65,8 @@ Así pues, percibiendo la vida desde una mente más abierta y despejada de negat
         ]);
         $post4 = new Post([
             "title" => "Ser arte",
+            "slug" => Str::slug("Ser arte"),
+
             "content" => "Tu ahí, con tu piel hecha a todos los climas,
 
 emanando arte-luz por las sendas de la vida,

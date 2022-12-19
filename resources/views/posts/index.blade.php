@@ -6,13 +6,16 @@
     @if (isset($posts))
         <div class="gallery">
             @foreach ($posts as $post)
-                <div class="gallery_item">
-                    <a href="/posts/{{ $post->id }}">
+                <article class="gallery__item">
+                    <a href="{{route("posts.show",$post)}}">{{--<a href="/posts/{{ $post->id }}">--}}
+                        {{--<figure>
+                            <img src="{{ Vite::asset('resources/images/welcome.webp') }}" alt="algo">
+                        </figure>--}}
                         <img src="https://via.placeholder.com/150" alt="algo">
                         <h2>{{ $post["title"]}}</h2>
                         <p>{{ Str::limit($post["content"])}}</p>
                     </a>
-                </div>
+                </article>
                 {{-- {{ $posts->links() }} --}}
             @endforeach
         </div>

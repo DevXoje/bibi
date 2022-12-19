@@ -11,19 +11,19 @@ class PictureSeeder extends Seeder
     {
         $picture1 = new Picture([
             "title" => "Amigas que inspiran 🍄",
-            "path" => "https://via.placeholder.com/150",
+            "path" => "resources/images/Dibujos/ninfa.webp",
         ]);
         $picture2 = new Picture([
             "title" => "✨🔮 Aparecium 🔮✨",
-            "path" => "https://via.placeholder.com/150",
+            "path" => "resources/images/Dibujos/ninfa_rasta.webp",
         ]);
         $picture3 = new Picture([
             "title" => "Hierbas mágicas de las brujas 🍂",
-            "path" => "https://via.placeholder.com/150",
+            "path" => "resources/images/Dibujos/hierbas_magicas.webp",
         ]);
         $picture4 = new Picture([
             "title" => "Nereida, amiga querida 🧜🏼‍♀️🌊✨",
-            "path" => "https://via.placeholder.com/150",
+            "path" => "resources/images/Dibujos/sirena.webp",
         ]);
         $picture1->save();
         $picture2->save();
