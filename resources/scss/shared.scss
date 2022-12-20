@@ -1,0 +1,65 @@
+/*Shared*/
+.navbar {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    max-width: 92%;
+    margin: 0 auto;
+    width: 1300px;
+    font-size: 2rem;
+    line-height: 1.8;
+
+    .menu-toggle {
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+        display: block;
+        margin: 0 auto;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &_nav {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+        display: flex;
+        justify-content: space-between;
+        flex: 2 1 auto;
+
+        .nav_item {
+            &.active, &:hover {
+                background-color: #c3957b;
+
+            }
+        }
+
+        .nav_link {
+            display: block;
+            font-size: 2rem;
+            line-height: 1.8;
+            color: #4F4F4F;
+            padding: 5px 10px;
+
+
+        }
+    }
+
+
+}
+
+.jumbotron {
+    img {
+        width: 740px;
+        aspect-ratio: auto 740 / 830;
+    }
+
+    @media screen and (max-width: 1304px) {
+        img {
+            height: auto;
+            max-width: 90vw;
+            max-height: 1000%;
+        }
+    }
+}

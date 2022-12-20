@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="{{ Vite::asset('resources/images/logo_w50.webp') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    @vite(['resources/css/app.scss', 'resources/js/app.js'])
+    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 </head>
 
 <body>

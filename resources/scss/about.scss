@@ -1,0 +1,90 @@
+/*About me*/
+.about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+    .image {
+        &__wrapper {
+            padding: 80px;
+            grid-column: 1 / 3;
+        }
+
+        &__cover {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+
+            object-fit: cover;
+            object-position: center right;
+        }
+    }
+
+    &__content {
+
+        font-size: 1.5em;
+        line-height: 1.8;
+
+        header {
+            margin-bottom: 1.7em;
+        }
+
+        p:not(:first-child) {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            text-align: center;
+            color: #666666;
+            font-style: italic;
+        }
+    }
+}
+
+.image_draw {
+
+}
+
+/*Contact*/
+.contact {
+    &__header {
+        h1 {
+            line-height: 1.2;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0 auto;
+            max-width: 92%;
+            word-wrap: break-word;
+            width: 1040px;
+            padding: 36px 0;
+            text-align: center;
+        }
+
+        p {
+            text-align: left;
+            margin-bottom: 1.8em;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            font-size: 2rem;
+            line-height: 1.8;
+        }
+    }
+
+    .call_to_action {
+        display: flex;
+
+        &__social {
+            & .icon_list {
+                display: flex;
+            }
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

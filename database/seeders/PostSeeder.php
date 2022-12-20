@@ -11,21 +11,21 @@ class PostSeeder extends Seeder
     public function run()
     {
         $post1 = new Post([
-            "image" => "resources/images/Articulos/conectarse_a_la_vida.webp",
+            "image" => "resources/images/Articulos/vision_holistica.webp",
             "title" => "1º Comprendernos como un todo",
             "slug" => Str::slug("1º Comprendernos como un todo"),
-            "content" => "La palabra Holística viene del término Holismo y esta a su vez de holos, término griego que significa  “todo” o “entero”.
+            "content" => "La palabra Holística viene del término Holismo y esta a su vez de holos, término griego que significa  “todo” o “entero”.\n
 
-El holismo es “una posición metodológica y de pensamiento que plantea el abordaje de los sistemas sociales, físicos, biológicos, mentales, y espirituales”, resaltando la importancia del Todo, es decir, desde una perspectiva completa. Así pues una visión holística en términos generales, es aquella que contemple la totalidad del sistema que compone al ser humano, lo que se puede interpretar como contemplar un mundo donde todo esta interconectado.
+El holismo es “una posición metodológica y de pensamiento que plantea el abordaje de los sistemas sociales, físicos, biológicos, mentales, y espirituales”, resaltando la importancia del Todo, es decir, desde una perspectiva completa. Así pues una visión holística en términos generales, es aquella que contemple la totalidad del sistema que compone al ser humano, lo que se puede interpretar como contemplar un mundo donde todo esta interconectado.\n
 
 Cuando hablamos de observar un problema de manera holística, lo que se pretende es abordar una situación desde un punto de vista mas amplio. Esta teoría y práctica nos ofrece un camino para mejorar nuestro bienestar, conectando la parte emocional con la física, y poder así obtener un equilibrio físico, mental y espiritual en todos los aspectos posibles.
 
-La visión holística se basa en tener un equilibrio de todas las áreas de nuestra vida, tanto externas como internas. Si por ejemplo se da un desequilibrio en nuestra salud física, se cree que es necesario sanar también las otras partes que nos componen, es decir, mente y alma de este modo propiciaríamos el equilibrio natural. De esta misma forma se sostiene que uno no puede sanar su mente si está intoxicando su cuerpo con sustancias adictivas. Del mismo modo uno no puede ascender a un plano mas espiritual si tiene la mente intoxicada.
+La visión holística se basa en tener un equilibrio de todas las áreas de nuestra vida, tanto externas como internas. Si por ejemplo se da un desequilibrio en nuestra salud física, se cree que es necesario sanar también las otras partes que nos componen, es decir, mente y alma de este modo propiciaríamos el equilibrio natural. De esta misma forma se sostiene que uno no puede sanar su mente si está intoxicando su cuerpo con sustancias adictivas. Del mismo modo uno no puede ascender a un plano mas espiritual si tiene la mente intoxicada.\n
 
 Así pues, percibiendo la vida desde una mente más abierta y despejada de negatividad, teniendo una alimentación saludable, abrazándonos en cada movimiento, descansando y fluyendo con nuestros propios ritmos naturales, podremos obtener un equilibrio y vivir una vida plena y en armonía."
         ]);
         $post2 = new Post([
-            "image" => "resources/images/Articulos/conectarse_a_la_vida.webp",
+            "image" => "resources/images/Articulos/vision_holistica_y_salud.webp",
 
             "title" => "2º Comprendernos como un todo",
             "slug" => Str::slug("2º Comprendernos como un todo"),
@@ -62,14 +62,14 @@ La clave sería vivir una vida equilibrada y armónica en la cual la enfermedad 
 
 El holismo es “una posición metodológica y de pensamiento que plantea el abordaje de los sistemas sociales, físicos, biológicos, mentales, y espirituales”, resaltando la importancia del Todo, es decir, desde una perspectiva completa. Así pues una visión holística en términos generales, es aquella que contemple la totalidad del sistema que compone al ser humano, lo que se puede interpretar como contemplar un mundo donde todo esta interconectado.
 
-Cuando hablamos de observar un problema de manera holística, lo que se pretende es abordar una situación desde un punto de vista mas amplio. Esta teoría y práctica nos ofrece un camino para mejorar nuestro bienestar, conectando la parte emocional con la física, y poder así obtener un equilibrio físico, mental y espiritual en todos los aspectos posibles.
+Cuando hablamos de observar un problema de manera holística, lo que se pretende es abordar una situación desde un punto de vista mas amplio. Esta teoría y práctica nos ofrece un camino para mejorar nuestro bienestar, conectando la parte emocional con la física, y poder así obtener un equilibrio físico, mental y espiritual en todos los aspectos posibles.\n
 
 La visión holística se basa en tener un equilibrio de todas las áreas de nuestra vida, tanto externas como internas. Si por ejemplo se da un desequilibrio en nuestra salud física, se cree que es necesario sanar también las otras partes que nos componen, es decir, mente y alma de este modo propiciaríamos el equilibrio natural. De esta misma forma se sostiene que uno no puede sanar su mente si está intoxicando su cuerpo con sustancias adictivas. Del mismo modo uno no puede ascender a un plano mas espiritual si tiene la mente intoxicada.
 
 Así pues, percibiendo la vida desde una mente más abierta y despejada de negatividad, teniendo una alimentación saludable, abrazándonos en cada movimiento, descansando y fluyendo con nuestros propios ritmos naturales, podremos obtener un equilibrio y vivir una vida plena y en armonía."
         ]);
         $post4 = new Post([
-            "image"=>"resources/images/Articulos/conectarse_a_la_vida.webp",
+            "image" => "resources/images/Articulos/conectarse_a_la_vida.webp",
 
             "title" => "Ser arte",
             "slug" => Str::slug("Ser arte"),

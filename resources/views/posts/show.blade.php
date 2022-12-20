@@ -3,15 +3,27 @@
 
 @section('content')
     @isset($post)
-        <figure>
-            <img src="{{ Vite::asset($post->image) }}" alt="algo">
-        </figure>
+        @php
+            $paragraphs=preg_split("/\r\n|\n|\r/",$post->content);
 
-        {{--<img src="https://via.placeholder.com/150" alt="algo">--}}
-        <h1>Details for the post {{ $post->id }}</h1>
-        <h2>{{ $post["title"]}}</h2>
-        <p>{{ $post["content"]}}</p>
-        <small>{{ $post->created_at->diffForHumans() }}</small>
+        @endphp
+
+        <article class="post">
+            <header class="post__header">
+                <figure>
+                    <img src="{{ Vite::asset($post->image) }}" alt="algo">
+                </figure>
+                <h1 class="post__title">{{ $post->title }}</h1>
+            </header>
+            <div class="post__content">
+                @foreach($paragraphs as $paragraph)
+                    <p>{{$paragraph}}</p>
+                @endforeach
+            </div>
+            <footer>
+                <small>{{ $post->created_at->diffForHumans() }}</small>
+            </footer>
+        </article>
         {{-- @if (auth()->check() && auth()->user()->id == $post->user_id)//|| auth()->user()->role==admin)
             <form action="{{ route('posts.destroy', $post) }}" method="POST">@csrf @method('DELETE')
                 <button type="submit">Borrar</button>

@@ -30,7 +30,6 @@ Route::resources([
     'pictures' => PicturesController::class
 ]);
 
-Route::get("download/book",[BooksController::class,"download"])->name("book_download");
+Route::get("download/book",[BooksController::class, "download"])->name("book_download");
 
 Route::get("login", [AuthController::class, "loginForm"]);
-
