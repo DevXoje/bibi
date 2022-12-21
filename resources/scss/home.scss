@@ -2,7 +2,6 @@
 .home {
     hr {
         width: 100px;
-        margin: 50px auto;
     }
 
     img {
@@ -41,13 +40,38 @@
         margin-bottom: 100px;
 
         fieldset {
-            legend{
-
-            }
-            display: flex;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
 
             border: none;
+
+            grid-gap: 10px;
+
+            * {
+                border: 1px solid red;
+            }
+
+            legend {
+                display: inline !important;
+                grid-area: 1 / 1 / 3 / 2;
+                background-color: lightpink;
+                float: left;
+                width: 100%;
+                padding: 20px;
+            }
+
+
+            input {
+                grid-area: 1 / 2 / 2 / 3;
+
+            }
+
+            button {
+                grid-area: 2 / 2 / 3 / 3;
+
+            }
+
         }
     }
 }

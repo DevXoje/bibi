@@ -2,11 +2,13 @@
 @section('title', 'Books')
 
 @section('content')
-    <figure class="jumbotron">
-        <img src="{{Vite::asset("resources/images/recursos_gratuitos.webp")}}" alt="algo">
-    </figure>
-    <h1>Books</h1>
-    <h2>DE LA TEORÍA A LA PRÁCTICA</h2>
+    <header>
+        <figure class="jumbotron free_resources">
+            <img src="{{Vite::asset("resources/images/recursos_gratuitos.webp")}}" alt="algo">
+        </figure>
+        <h1>Books</h1>
+        <h2>DE LA TEORÍA A LA PRÁCTICA</h2>
+    </header>
     @if (isset($books))
         @foreach ($books as $book)
             {{--<div class="book">
@@ -42,5 +44,27 @@
         </p>
     @endif
     <hr>
-
+    <footer>
+        Call to action compartir
+        <ul>
+            <li>
+                <button>
+                    facebook
+                </button>
+            </li>
+            <li>
+                <button>
+                    whatsapp
+                </button>
+            </li>
+            <li>
+                <button>
+                    whatsapp
+                </button>
+            </li>
+        </ul>
+        <button>
+            megusta
+        </button>
+    </footer>
 @endsection

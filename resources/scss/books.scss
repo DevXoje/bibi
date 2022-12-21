@@ -1,4 +1,9 @@
 /*Books*/
+.free_resources{
+    width: 100%;
+    position: relative;
+    display: flex !important;
+}
 .book {
     border: 1px solid rosybrown;
 
@@ -20,5 +25,11 @@
     &__content {
 
 
+    }
+}
+header{//duplicado en blog
+    margin: 50px 0;
+    h1{
+        text-align: center;
     }
 }
