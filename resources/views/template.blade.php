@@ -12,13 +12,11 @@
 
 <body>
 {{-- @section('nav', ['Home' => route('home'), 'List of posts' => route('posts_list')]) --}}
-<div class="jumbotron">
-    <a>
+    <a href="{{route("home")}}">
         <figure class="jumbotron">
             <img src="{{ Vite::asset('resources/images/jumbotron.webp') }}" alt="algo">
         </figure>
     </a>
-</div>
 @include('partials.nav')
 <div class="container">
     @yield('content')

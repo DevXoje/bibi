@@ -3,7 +3,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build && vite build --ssr",
-        "serve-docker": "./vendor/bin/sail up"
+        "serve": "sail up -d & sail npm run dev"
     },
     "devDependencies": {
         "axios": "^1.1.2",
