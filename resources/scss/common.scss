@@ -19,6 +19,20 @@ hr {
 
 }
 
+input {
+    padding-left: 15px;
+
+    &::placeholder {
+        color: #b5b5b5;
+    }
+}
 
 
+header {
+    padding: 72px 0;
+    text-align: center;
 
+    h1,h2 {
+        margin: 50px 0;
+    }
+}

@@ -3,18 +3,18 @@
 
 @section('content')
     <article class="home">
-        <header class="home_header">
+        <header class="home__header">
             <figure>
-                {{--
-                                <img src="{{ Vite::asset('resources/images/bienvenida.webp') }}" alt="algo">
-                --}}                {{--Seria mejor que fuese texto--}}
+                <img src="{{ Vite::asset('resources/images/bienvenida.webp') }}" alt="algo">
+                {{--Seria mejor que fuese texto--}}
             </figure>
-            <p>Este es un espacio íntimo y personal que he creado para ti, un lugar donde podrás relajarte y redescubrir
-                tus dones naturales y creativos.</p>
-            <p>Mi propuesta de trabajo se basa en facilitarte información y pequeñas herramientas artísticas de
-                exploración y transformación, con las que despertar tu creatividad, poder armonizarte y reconectar de
-                manera apasionada con tu esencia y naturaleza creadora.</p>
         </header>
+        <p>Este es un espacio íntimo y personal que he creado para ti, un lugar donde podrás relajarte y redescubrir
+            tus dones naturales y creativos.</p>
+        <p>Mi propuesta de trabajo se basa en facilitarte información y pequeñas herramientas artísticas de
+            exploración y transformación, con las que despertar tu creatividad, poder armonizarte y reconectar de
+            manera apasionada con tu esencia y naturaleza creadora.</p>
+
         <figure class="return_to_you">
             <img src="{{ Vite::asset('resources/images/de_vuelta_a_ti.webp') }}" alt="algo">
         </figure>
@@ -45,10 +45,16 @@
                         gratuita
                     </legend>
                     <label for="mail_newsletter">algo</label>
-                    <input name="mail_newsletter" id="mail_newsletter" placeholder="algo">
-                    <button type="submit"> subscribre</button>
+                    <input name="mail_newsletter" id="mail_newsletter"
+                           placeholder="Introduce tu dirección de correo electrónico">
+                    <button type="submit" class="btn">
+                        Suscríbete
+                    </button>
                 </fieldset>
             </form>
         </footer>
     </article>
 @endsection
+{{--
+
+--}}

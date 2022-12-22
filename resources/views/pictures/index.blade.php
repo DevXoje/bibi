@@ -2,17 +2,17 @@
 @section('title', 'Pictures')
 
 @section('content')
-    <h1>Pictures</h1>
+    <header>
+        <h1>Pictures</h1>
+    </header>
     @if (isset($pictures))
         <div class="gallery_pictures">
             @foreach ($pictures as $picture)
                 <figure class="jumbotron">
-                    <hr>
                     <figcaption>
-                        <h2>{{$picture["title"]}}</h2>
+                        <h2 class="title hr_decoration">{{$picture->title}}</h2>
                     </figcaption>
-                    <hr>
-                    <img src="{{Vite::asset($picture["path"])}}" alt="algo">
+                    <img src="{{Vite::asset($picture->path)}}" alt="algo">
 
                 </figure>
             @endforeach
@@ -22,6 +22,5 @@
             No Hay book disponibles
         </p>
     @endif
-    <hr>
-
+    @include("partials.call_to_action__share")
 @endsection

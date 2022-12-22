@@ -1,0 +1,46 @@
+/*Contact*/
+.contact {
+    &__header {
+
+        h1 {
+            line-height: 1.2;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0 auto;
+            max-width: 92%;
+            word-wrap: break-word;
+            width: 1040px;
+            padding: 36px 0;
+            text-align: center;
+        }
+
+        p {
+            text-align: left;
+            margin-bottom: 1.8em;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            font-size: 2rem;
+            line-height: 1.8;
+        }
+    }
+
+    .call_to_action {
+        display: flex;
+        justify-content: space-between;
+
+        &__social {
+            & .icon_list {
+                display: flex;
+            }
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+}

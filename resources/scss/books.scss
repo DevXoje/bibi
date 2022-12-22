@@ -1,35 +1,43 @@
 /*Books*/
-.free_resources{
-    width: 100%;
-    position: relative;
-    display: flex !important;
-}
-.book {
-    border: 1px solid rosybrown;
+.gallery_books {
 
-    &__title, &__subtitle {
-        margin-bottom: 1em;
-        line-height: 1.8;
-
+    .free_resources {
+        width: 100%;
+        position: relative;
+        display: flex !important;
     }
 
-    &__title {
-        color: rebeccapurple;
+    .book {
+        background: rgb(250, 202, 233);
+        background: linear-gradient(90deg, rgba(250, 202, 233, 1) 0%, rgba(206, 179, 234, 1) 35%, rgba(156, 151, 235, 1) 100%);
+        border: 15px solid;
+        border-image: linear-gradient(to right, rgba(250, 202, 233, 1), rgba(206, 179, 234, 1), rgba(156, 151, 235, 1)) 1;
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+        }
+
+        &__title, &__subtitle {
+            margin-bottom: 1em;
+            line-height: 1.8;
+            text-align: center;
+
+        }
+
+        &__title {
+            color: rebeccapurple;
+        }
+
+        &__subtitle {
+            color: blue;
+
+        }
+
+        &__content {
+
+        }
     }
 
-    &__subtitle {
-        color: blue;
 
-    }
-
-    &__content {
-
-
-    }
-}
-header{//duplicado en blog
-    margin: 50px 0;
-    h1{
-        text-align: center;
-    }
 }

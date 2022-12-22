@@ -1,5 +1,19 @@
 /*Picture*/
 .gallery_pictures {
+    .title {
+        text-align: center;
+
+        /*&:after, &:before {
+            content: "";
+            display: block;
+            height: 2px;
+            background-color: #939393;
+            margin: 36px auto;
+            width: 108px;
+        }*/
+
+    }
+
     figure {
 
         img {
