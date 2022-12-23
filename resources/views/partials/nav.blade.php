@@ -11,20 +11,24 @@
             ],
             [
               "route"=>"books.index",
-              "text"=>"recursos"
+              "text"=>"books"
             ],
             [
               "route"=>"pictures.index",
-              "text"=>"galeria"
+              "text"=>"gallery"
             ],
             [
               "route"=>"about",
-              "text"=>"sobre mi"
+              "text"=>"about me"
             ],
             [
               "route"=>"contact",
-              "text"=>"contacto"
+              "text"=>"contact"
             ],
+            [
+                "route"=>"dashboard",
+                "text"=>"dashboard"
+            ]
         ];
     @endphp
     <button class="menu-toggle">
@@ -34,10 +38,12 @@
         @foreach ($links as $link )
             <li class="nav_item {{ Route::currentRouteName()=== $link["route"] ? 'active' : '' }}">
                 <a class="nav_link" href="{{ route($link["route"]) }}">
-                    {{ ucfirst(trans( $link["text"])) }}
+                    {{ __('navigation.'.$link["text"]) }}
                 </a>
             </li>
         @endforeach
 
     </ul>
+    @include("partials.language_switcher")
+
 </nav>

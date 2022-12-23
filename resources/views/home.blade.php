@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts/template')
 @section('title', 'Home')
 
 @section('content')
@@ -44,7 +44,7 @@
                     <legend>Si te apetece recibir contenido para trabajar con y para ti misma suscríbete de forma
                         gratuita
                     </legend>
-                    <label for="mail_newsletter">algo</label>
+                    <label for="mail_newsletter"></label>
                     <input name="mail_newsletter" id="mail_newsletter"
                            placeholder="Introduce tu dirección de correo electrónico">
                     <button type="submit" class="btn">

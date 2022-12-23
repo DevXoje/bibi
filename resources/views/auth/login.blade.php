@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts/template')
 @section('title', 'Login')
 @section('content')
     <h1>Login</h1>
