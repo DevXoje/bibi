@@ -14,7 +14,7 @@ class BookSeeder extends Seeder
             "title" => "Visión Holística y Salud",
             "subtitle" => "Diccionario Biodescodificación",
             //"link" => "https://drive.google.com/file/d/1Dbyx37ONbAAZXbMH-5kH1SC_rMwvUWPL/view?usp=drivesdk",
-            "link" => "resources/pdf/Diccionario_biodescodificación.pdf",
+            "link" => "pdf/Diccionario_biodescodificación.pdf",
             "slug" => Str::slug("Diccionario Biodescodificación"),
             "image" => "resources/images/Libros/Diccionario_biodescodificacion_thumbnail.PNG"
         ]);
@@ -22,7 +22,7 @@ class BookSeeder extends Seeder
             "title" => "Conectarse A La Vida",
             "subtitle" => "Alimentación consciente",
             //"link" => "https://drive.google.com/file/d/1Dbyx37ONbAAZXbMH-5kH1SC_rMwvUWPL/view?usp=drivesdk",
-            "link" => "resources/pdf/Alimentacion_consciente.pdf",
+            "link" => "pdf/Alimentacion_consciente.pdf",
             "slug" => Str::slug("Alimentación consciente"),
             "image" => "resources/images/Libros/Alimentacion_Consciente_thumbnail.PNG"
 
@@ -31,7 +31,7 @@ class BookSeeder extends Seeder
             "title" => "Arte-terapia Holistica",
             "subtitle" => "Mandalas para colorear 1",
             //"link" => "https://drive.google.com/file/d/1B0N-MVqlp9nMlkhVCaaDtn2q16-FIAjr/view?usp=drivesdk"
-            "link" => "resources/pdf/Mandalas.pdf",
+            "link" => "pdf/Mandalas.pdf",
             "slug" => Str::slug("Mandalas para colorear 1"),
             "image" => "resources/images/Libros/mandalas_pintar_1_thumbnail.PNG"
 
@@ -40,7 +40,7 @@ class BookSeeder extends Seeder
             "title" => "Arte-terapia Holistica",
             "subtitle" => "Mandalas para colorear 2",
             //"link" => "https://drive.google.com/file/d/1Dbyx37ONbAAZXbMH-5kH1SC_rMwvUWPL/view?usp=drivesdk"
-            "link" => "resources/pdf/Mandalas2.pdf",
+            "link" => "pdf/Mandalas2.pdf",
             "slug" => Str::slug("Mandalas para colorear 2"),
             "image" => "resources/images/Libros/mandalas_pintar_2_thumbnail.PNG"
 

@@ -39,14 +39,18 @@ class BooksController extends Controller
 
     public function download(Book $book)
     {
+        return "
+        datos:
+        {{$book["link"]}}
+        ";
         //PDF file is stored under project/public/download/info.pdf
-        $file = public_path() . "/pdf/Mandalas2.pdf";
-
+        $file = public_path() . $book->link;
+        return $file;
         $headers = array(
             'Content-Type: application/pdf',
         );
 
         //return response()->file($file, $headers);
-        return response()->download($file, headers:$headers);
+        //return response()->download($file, headers: $headers);
     }
 }

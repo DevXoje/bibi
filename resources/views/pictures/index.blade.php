@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts/template')
 @section('title', 'Pictures')
 
 @section('content')
@@ -8,13 +8,7 @@
     @if (isset($pictures))
         <div class="gallery_pictures">
             @foreach ($pictures as $picture)
-                <figure class="jumbotron">
-                    <figcaption>
-                        <h2 class="title hr_decoration">{{$picture->title}}</h2>
-                    </figcaption>
-                    <img src="{{Vite::asset($picture->path)}}" alt="algo">
-
-                </figure>
+                @include("pictures.item",$picture)
             @endforeach
         </div>
     @else

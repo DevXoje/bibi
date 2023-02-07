@@ -14,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('locale/{locale}', function ($locale) {
+    Session::put('locale', $locale);
+    return redirect()->back();
+});
+
+
 Route::get('/', function () {
     return view('home');
 })->name("home");
@@ -30,6 +37,11 @@ Route::resources([
     'pictures' => PicturesController::class
 ]);
 
-Route::get("download/book",[BooksController::class, "download"])->name("book_download");
+Route::get("download/book", [BooksController::class, "download"])->name("book_download");
 
 Route::get("login", [AuthController::class, "loginForm"]);
+
+
+Route::get("dashboard", function () {
+    return view('dashboard.dashboard');
+})->name("dashboard");

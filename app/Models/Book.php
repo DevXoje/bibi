@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
-    /*protected $attributes = [
+    protected $attributes = [
         "title",
         "subtitle",
         "link",
         "slug",
         "image",
-    ];*/
+    ];
     protected $casts = [
         "title" => "string",
         "subtitle" => "string",
