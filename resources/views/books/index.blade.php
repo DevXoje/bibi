@@ -3,8 +3,8 @@
 
 @section('content')
     <div class="gallery_books">
-        <header>
-            <figure class="jumbotron free_resources">
+        <header class="galery_books__header">
+            <figure class="free_resources">
                 <img src="{{Vite::asset("resources/images/recursos_gratuitos.webp")}}" alt="algo">
             </figure>
             <h1>Books</h1>
